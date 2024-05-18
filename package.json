@@ -1,0 +1,45 @@
+{
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "husky": "^9.0.11",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.3.5",
+    "mysql2": "^3.9.7",
+    "node": "^20.13.1",
+    "typeorm": "^0.3.20"
+  },
+  "name": "23.3-workshop-api-trenes",
+  "version": "1.0.0",
+  "description": "workshop node s-7",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
+    "start": "ts-node-dev ./src/index.ts",
+    "start:pro": "npm run build && node ./src/index.js",
+    "seed": "ts-node-dev ./src/seed/renfe.seed.ts --ignore-watch",
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install"
+  },
+  "keywords": [
+    "express",
+    "typescript"
+  ],
+  "author": "Cristina Román",
+  "license": "ISC",
+  "devDependencies": {
+    "@eslint/js": "^9.2.0",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/jsonwebtoken": "^9.0.6",
+    "@types/node": "^20.12.12",
+    "eslint": "^8.57.0",
+    "globals": "^15.2.0",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.4.5",
+    "typescript-eslint": "^7.9.0"
+  }
+}
